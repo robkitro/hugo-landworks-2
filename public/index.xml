@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landworks Garden Design</title>
-    <link>https://github.com/digitalcraftsman/hugo-agency-theme/</link>
+    <link>https://hugo-landworks-2.herokuapp.com/</link>
     <description>Recent content on Landworks Garden Design</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://github.com/digitalcraftsman/hugo-agency-theme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-landworks-2.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
