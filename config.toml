@@ -1,6 +1,6 @@
 
 # Site settings
-baseurl = "localhost:1313"
+baseurl = "https://hugo-landworks-2.herokuapp.com/"
 publishdir = "public"
 languageCode = "en-us"
 title = "Landworks Garden Design"
