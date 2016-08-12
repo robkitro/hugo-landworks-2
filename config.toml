@@ -1,0 +1,212 @@
+
+# Site settings
+baseurl = "localhost:1313"
+publishdir = "public"
+languageCode = "en-us"
+title = "Landworks Garden Design"
+theme = "hugo-agency-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Landworks Garden Design"
+	description = "Imaginative garden designs for everyone"
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "robkitro@gmail.com"
+
+    # Link custom assets relative to /statuc
+    custom_css = []
+    custom_js  = []
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Landworks Garden Design"
+		services = "Services"
+		portfolio = "Portfolio"
+		about = "About"
+		team = "Team"
+		contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "http://gohugo.io"
+    #    name = "Hugo"
+    #    weight = 10
+
+    # postpended links
+
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Welcome To Landworks Garden Design"
+		subtitle = ""
+		buttonText = "Tell me more"
+
+
+	# Services section
+	[params.services]
+        enable = true
+		title = "Landworks Garden Design"
+		subtitle = "Landworks is a small, friendly garden design business based in Cardigan, West Wales. We design, landscape and build one-off gardens to order"
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-pencil"
+                title = "Design"
+                description = " We can simply create your design and explain it to your contractors personally, to ensure a smooth delivery of your chosen garden."
+
+            [[params.services.row.list]]
+                icon = "fa-tree"
+                title = "Landscaping"
+                description = "We can make the gardens we design. We take the design straight from the paper to the garden. We do the landscaping, make the structures and add in all the special features ourselves. This means our designs are practical and realistic as well as imaginative"
+
+            [[params.services.row.list]]
+                icon = "fa-shield"
+                title = "Maintenance"
+                description = "We love to maintain your garden, talk to us about retainer options"
+
+	# Portfolio section
+	[params.portfolio]
+        enable = true
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "Portfolio"
+		subtitle = "Imaginative one-off designs to suit every garden and budget"
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close"
+
+
+    # About section
+	[params.about]
+        enable = true
+		title = "About"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		endpoint = "Be part<br>of our<br>story!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+		[[params.about.events]]
+			img = "mosaic.jpg"
+			date = ""
+			title = "Our Humble Beginnings"
+			description = " Landworks was established in 2005 by Michelle Dunn (MSc.,BSc). In that time we have designed and installed a wide variety of gardens, from small low-maintenance gardens to multi-thousand pound show gardens for hotels."
+
+		[[params.about.events]]
+			img = "manifesto.jpg"
+			date = ""
+			title = "Wildlife Manifesto"
+			description = " Landworks is committed to wildlife-friendly gardening. With a background in conservation management, we are well aware of the current threats to our native wildlife and design our gardens accordingly. Peat bogs and the rare species associated with them are vanishing rapidly due to the extraction of peat for the gardening industry, so we only use peat-free compost. We design with water conservation in mind, and use plants which are best suited to the local environment to avoid the need for constant watering and pesticides. We use nectar rich and scented plants as standard (best for bees and butterflies) and stock a range of native wildflowers at our nursery for planting wildflower meadows. These wildflowers were all grown from seed gathered with kind permission from the reserves of the Wildlife Trust."
+
+		[[params.about.events]]
+			img = "MiSaw.jpg"
+			date = ""
+			title = "Environmental Commitment"
+			description = "pic and text about FSC, peat-free, wildlife Trust, Bellamy awards"
+
+		[[params.about.events]]
+			img = "Dogs.jpg"
+			date = ""
+			title = "How it works"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+	# Team section
+	[params.team]
+        enable = true
+		title = "Our amazing team"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+
+
+		[[params.team.members]]
+			img = "MD_about.jpg"
+			name = "Michelle Dunn"
+			position = "Garden Guru"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+
+			]
+
+
+
+
+
+	# Contact section
+	[params.contact]
+        enable = true
+		title = "Contact us"
+		subtitle  = "Lorem ipsum dolor sit amet consectetur."
+		buttonText = "Send message"
+		data-dismiss="alert"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Phone *"
+			warning = "Please enter your phone number."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+        enable = true
+		copyright = "Landworks Garden Design"
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-facebook"
+			link = "#"
