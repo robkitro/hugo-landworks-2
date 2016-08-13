@@ -159,7 +159,7 @@ googleAnalytics = ""
 
 
 		[[params.team.members]]
-			img = "MD_about.jpg"
+			img = "MD.jpg"
 			name = "Michelle Dunn"
 			position = "Garden Guru"
 			social = [
